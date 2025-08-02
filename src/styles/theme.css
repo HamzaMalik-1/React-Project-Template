@@ -1,0 +1,33 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --primary-color: #0d6efd;
+  --card-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #0d6efd;
+  --card-bg: #1f1f1f;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
