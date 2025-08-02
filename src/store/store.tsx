@@ -2,10 +2,14 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import userReducer from '../features/user/userSlice'; // we'll create this next
-
+import authReducer from "../features/auth/authSlice";
+import analyticsReducer from "../features/analytics/analyticsSlice";
 export const store = configureStore({
   reducer: {
     user: userReducer,
+    auth: authReducer, // 👈 Add this line
+analytics: analyticsReducer
+
   },
 });
 
